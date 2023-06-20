@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <head>
-	<title>2 задание</title>
+	<title>2 Г§Г Г¤Г Г­ГЁГҐ</title>
 	<link rel="stylesheet" href="style.css">
-	<meta charset="UTF-8">
+	<meta charset="ISO-8859-1">
 </head>
 <body>
 	<table width="100%" border="1" cellspacing="0" cellpadding="4">
-		<caption>Таблица инструментов</caption>  
+		<caption>Г’Г ГЎГ«ГЁГ¶Г  ГЁГ­Г±ГІГ°ГіГ¬ГҐГ­ГІГ®Гў</caption>  
 		<tr>
-			<th>&nbsp;</th><th>1 столбец</th>
-			<th>2 столбец</th><th>3 столбец</th>
+			<th>&nbsp;</th><th>1 Г±ГІГ®Г«ГЎГҐГ¶</th>
+			<th>2 Г±ГІГ®Г«ГЎГҐГ¶</th><th>3 Г±ГІГ®Г«ГЎГҐГ¶</th>
 		</tr>
 		<tr>
-			<td>1 ряд</td>
+			<td>1 Г°ГїГ¤</td>
 			<td><span class="dynamic"><img src="screwdriver.png"><img src="pilers.png"><img src="axe.png"><img src="hammer.png"></span></td>
 			<td><span class="dynamic"><img src="pilers.png"><img src="axe.png"><img src="hammer.png"><img src="screwdriver.png"></span></td>
 			<td><span class="dynamic"><img src="axe.png"><img src="pilers.png"><img src="screwdriver.png"><img src="hammer.png"></span></td>
 		</tr>
 		<tr>
-			<td>2 ряд</td>
+			<td>2 Г°ГїГ¤</td>
 			<td><span class="dynamic"><img src="hammer.png"><img src="screwdriver.png"><img src="axe.png"><img src="pilers.png"></span></td>
 			<td><span class="dynamic"><img src="pilers.png"><img src="hammer.png"><img src="axe.png"><img src="screwdriver.png"></span></td>
 			<td><span class="dynamic"><img src="screwdriver.png"><img src="axe.png"><img src="pilers.png"><img src="hammer.png"></span></td>
 		</tr>
 		<tr>
-			<td>3 ряд</td>
+			<td>3 Г°ГїГ¤</td>
 			<td><span class="dynamic"><img src="screwdriver.png"><img src="pilers.png"><img src="hammer.png"><img src="axe.png"></span></td>
 			<td><span class="dynamic"><img src="screwdriver.png"><img src="hammer.png"><img src="axe.png"><img src="pilers.png"></span></td>
 			<td><span class="dynamic"><img src="pilers.png"><img src="axe.png"><img src="hammer.png"><img src="screwdriver.png"></span></td>
@@ -41,10 +41,10 @@ var elems = document.getElementsByClassName("dynamic"),
             trampInput.style.width = "128px";
             trampInput.addEventListener("blur", function() {
 				let innerText = trampInput.value;
-				innerText = innerText.replace( /О/gi, "<img src=\"screwdriver.png\">" );
-				innerText = innerText.replace( /П/gi, "<img src=\"pilers.png\">" );
-				innerText = innerText.replace( /М/gi, "<img src=\"hammer.png\">" );
-				innerText = innerText.replace( /Т/gi, "<img src=\"axe.png\">" );				
+				innerText = innerText.replace( /ГЋ/gi, "<img src=\"screwdriver.png\">" );
+				innerText = innerText.replace( /ГЏ/gi, "<img src=\"pilers.png\">" );
+				innerText = innerText.replace( /ГЊ/gi, "<img src=\"hammer.png\">" );
+				innerText = innerText.replace( /Г’/gi, "<img src=\"axe.png\">" );				
 				trampInput.parentNode.innerHTML = innerText;
 				istdselect = false;	
 			}
@@ -55,10 +55,10 @@ for (var i=0; i<elems.length; i++) {
         if (istdselect) return;
 		istdselect = true;
 		let innerText = this.innerHTML;
-		innerText = innerText.replace( /<img src=\"screwdriver.png\">/gi, "О" );
-		innerText = innerText.replace( /<img src=\"pilers.png\">/gi, "П" );
-		innerText = innerText.replace( /<img src=\"hammer.png\">/gi, "М" );		
-		innerText = innerText.replace( /<img src=\"axe.png\">/gi, "Т" );		
+		innerText = innerText.replace( /<img src=\"screwdriver.png\">/gi, "ГЋ" );
+		innerText = innerText.replace( /<img src=\"pilers.png\">/gi, "ГЏ" );
+		innerText = innerText.replace( /<img src=\"hammer.png\">/gi, "ГЊ" );		
+		innerText = innerText.replace( /<img src=\"axe.png\">/gi, "Г’" );		
         trampInput.value = innerText;
         this.innerHTML = "";
         this.appendChild(trampInput);
